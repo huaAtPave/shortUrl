@@ -1,0 +1,23 @@
+{
+  "name": "Getting Started Example",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 2,
+  // "host_permissions": ["http://*/", "https://*/"],
+
+  // "background": {
+  //   "service_worker": "background.js"
+  // },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+//   "content_scripts": [
+//     {
+//       "matches": ["http://*/*", "https://*/*"]
+// // "js": ["redirector.js"]
+//     }
+//   ],
+  "permissions": ["storage", "tabs", "activeTab", "webRequest", "webRequestBlocking", "webNavigation", "http://*/", "https://*/"]
+}
